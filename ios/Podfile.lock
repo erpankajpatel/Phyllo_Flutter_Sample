@@ -1,29 +1,39 @@
 PODS:
   - Flutter (1.0.0)
-  - phyllo_connect (0.1.25):
+  - fluttertoast (0.0.2):
     - Flutter
-    - PhylloConnect (= 0.1.25)
-  - PhylloConnect (0.1.25)
+    - Toast
+  - phyllo_connect (0.1.28):
+    - Flutter
+    - PhylloConnect (= 0.2.2)
+  - PhylloConnect (0.2.2)
+  - Toast (4.0.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - phyllo_connect (from `.symlinks/plugins/phyllo_connect/ios`)
 
 SPEC REPOS:
   trunk:
     - PhylloConnect
+    - Toast
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
   phyllo_connect:
     :path: ".symlinks/plugins/phyllo_connect/ios"
 
 SPEC CHECKSUMS:
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  phyllo_connect: 3e7b56f8844372af5294689ca7f972349093b90b
-  PhylloConnect: a114f3dcaeccecead89eb38f457462a5f24db5b2
+  fluttertoast: 16fbe6039d06a763f3533670197d01fc73459037
+  phyllo_connect: 80a7ef87a58d7c77f2a40e2aec4b8ea30cc88919
+  PhylloConnect: e75346b6a910db08e06aa158161f6080513900a1
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: eb77cd5a845e928c3a70e9656aa1e50b7131e89b
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

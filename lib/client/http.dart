@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
-import 'package:flutter_sample_app/client/result.dart';
-import 'package:flutter_sample_app/constants/configs.dart';
 import 'package:http/http.dart';
+import 'package:flutter_sample_app/client/result.dart';
+import 'package:flutter_sample_app/constants/environment.dart';
 
 enum RequestType { post, get }
 
@@ -17,12 +17,13 @@ class Http {
     required RequestType? requestType,
     required String url,
     dynamic body,
+    required Environment environment,
   }) async {
     Uri uri = Uri.parse(url);
 
     // Basic auth
     String basicAuth =
-        'Basic ${base64Encode(utf8.encode('${Configs.clientId}:${Configs.clientSecret}'))}';
+        'Basic ${base64Encode(utf8.encode('${environment.clientId}:${environment.clientSecret}'))}';
 
     log('$url ==> $body', name: 'REQUEST');
 
